@@ -33,9 +33,7 @@ for i in xrange(0,2):
         cubit.cmd('volume all size 0.5')
         cubit.cmd('mesh volume all')
     else:
-        cubit.cmd('delete mesh')
-        cubit.cmd('refine volume 9 13 numsplit 1 bias 1 depth 1 smooth')
-        cubit.cmd('mesh volume all')
+        cubit.cmd('refine volume all numsplit 1 bias 1 depth 1 smooth')
     cubit.cmd('export genesis "~/projects/anteater/problems/geom/hollow_cyl_hole_r' + str(i) + '.e" overwrite')
 
 
