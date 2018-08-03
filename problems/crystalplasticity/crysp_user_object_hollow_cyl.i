@@ -101,9 +101,10 @@ inactive = 'Variables Kernels'
   [prop_read]
     type = ElementPropertyReadFile
     nprop = 3
-    prop_file_name = euler_ang_file_rubik.txt
+    prop_file_name = ../../../../Documents/maximal_sample_2_euler.txt
     read_type = block
-    ngrain = 8
+    points_file_name = ../../../../Documents/maximal_sample_2.txt
+    method = UserSpecified
   []
 []
 
